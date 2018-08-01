@@ -1,0 +1,9 @@
+<div [appStatus]="status">
+    <span>
+    this is my text
+  </span>
+</div>
+<div>
+    <p *ngFor="let f of fileSizes">{{ f | myPipe }}</p>
+    <p>{{ largeFileSize | myPipe:true }}</p>
+</div>
